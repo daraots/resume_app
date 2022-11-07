@@ -1,0 +1,75 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+<!-- ================================
+Start SEO blocks
+================================= -->
+{% block title %}{% endblock %}
+{% block decription %}{% endblock %}
+{% block keywords %}{% endblock %}
+<!-- ================================
+END SEO blocks
+================================= -->
+
+<!-- ================================
+Start CSS blocks
+================================= -->
+{% block extend_header %}{% endblock %}
+<!-- ================================
+END CSS blocks
+================================= -->
+
+<!-- ================================
+Start script blocks
+================================= -->
+{% block extend_footer %}{% endblock %}
+<!-- ================================
+END script blocks
+================================= -->
+
+<!-- ================================
+Start Content
+================================= -->
+{% block content %}
+<section>
+
+
+        <div class="sectionSpaceSm">
+          <div class="container">
+            <br>
+            <br>
+
+            <h4 class="text-uppercase">Logistic Curve Fitting and Covid-19 Data</h4>
+
+            <p class="fz-16">
+            <br>
+              I made the following tutorial to present to my Advanced Engineering Mathematics students, to illustrate basic mathematical modeling. Python was used to measure and plot growth metrics and fit a logistic curve to Covid-19 data for March, 2020.
+            </p>
+
+
+         </div>
+        </div>
+
+
+          <div class="container lightBg">
+              <br>
+            <iframe src="https://www.kaggle.com/embed/dferhadi/covid-19-predictions-growth-factor-and-calculus?kernelSessionId=41203950" height="800" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="Covid-19 Predictions, Growth Factor, and Calculus"></iframe>
+
+
+            <br>
+          </div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+{%endblock%}

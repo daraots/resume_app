@@ -1,0 +1,69 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+<!-- ================================
+Start SEO blocks
+================================= -->
+{% block title %}{% endblock %}
+{% block decription %}{% endblock %}
+{% block keywords %}{% endblock %}
+<!-- ================================
+END SEO blocks
+================================= -->
+
+<!-- ================================
+Start CSS blocks
+================================= -->
+{% block extend_header %}{% endblock %}
+<!-- ================================
+END CSS blocks
+================================= -->
+
+<!-- ================================
+Start script blocks
+================================= -->
+{% block extend_footer %}{% endblock %}
+<!-- ================================
+END script blocks
+================================= -->
+
+<!-- ================================
+Start Content
+================================= -->
+{% block content %}
+<section>
+
+
+        <div class="sectionSpaceSm">
+          <div class="container">
+            <br>
+            <br>
+
+            <h4 class="text-uppercase">Degree Audits and Scheduling Classes</h4>
+
+
+            <p class="fz-16">
+            <br>
+              The American University of Kurdistan follows an American style curriculum for Higher Education. In particular, there are various General Education Requirements, Major Core-Requirements, as well as free electives. This makes it tricky to forecast enrollment numbers for courses and sections for future semetsers. To devise a way to forecast enrollment for future semesters, Degree Audits were developed. A Degree Audit is a document unique to each student, it contains a list of the courses completed, and the courses and requirements which are incomplete and need to be completed in order for the given student to qualify for graduation. MS Excel and VBA were used to contruct a Degree Audit System whereby degree audit generation was automated by connecting the system to the Transcript System database. Buttons were created using VBA code to automatically generate and email PDFs of Degree Audits to each student. Furthermore, and more importantly, VBA buttons were created to extract the courses which students have not yet completed and this formed the basis for forecasting enrollment. These forecasts were used to optimize class scheduling, in one year alone we decreased the number classes we had to schedule by more than 20%. Python was used to code the optimization algorithm. On my portfolio page, see the project titled "Stochastic Optimization" for a detailed explanation of the algorithm used to optimize the class schedule. See a sample degree audit by clicking the link below.
+            </p>
+            <p><a href={% static 'degree_audit_report_for_sample_student.pdf' %}>Click here to view a degree audit for a sample student</a>.</p>
+
+         </div>
+        </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+{%endblock%}

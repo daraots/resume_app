@@ -1,0 +1,79 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+<!-- ================================
+Start SEO blocks
+================================= -->
+{% block title %}{% endblock %}
+{% block decription %}{% endblock %}
+{% block keywords %}{% endblock %}
+<!-- ================================
+END SEO blocks
+================================= -->
+
+<!-- ================================
+Start CSS blocks
+================================= -->
+{% block extend_header %}{% endblock %}
+<!-- ================================
+END CSS blocks
+================================= -->
+
+<!-- ================================
+Start script blocks
+================================= -->
+{% block extend_footer %}{% endblock %}
+<!-- ================================
+END script blocks
+================================= -->
+
+<!-- ================================
+Start Content
+================================= -->
+{% block content %}
+<section>
+
+
+        <div class="sectionSpaceSm">
+          <div class="container">
+            <br>
+            <br>
+
+            <h4 class="text-uppercase">Visualizing Curvature using Vector Calculus</h4>
+
+
+            <p class="fz-16">
+            <br>
+              In Calculus, we study rates of change. In particular, rates of change of tangent lines and tangent vectors. This animation shows how curvature (a metric which quantifies how windy a curve is at a given point) can be defined as the rate of change of the direction of the unit tangent vector. You can interact with the animation below (zoom, grab, and rotate the graph) to see how the osculating circle's radius (equal to 1 divided by the curvature of the curve at that point) fluctuates as you travel along the curve. The 2D graph on the right shows the curvature as a number. Notice that the circle is large and curvature is near zero where the curve is straight like a line and the circle is small where the curvature is high and the curve is very windy.
+            </p>
+
+
+         </div>
+        </div>
+
+
+      <div class="container">
+
+        <iframe scrolling="no"
+        src="https://www.geogebra.org/m/gntgfvcv"
+        width="850px"
+        height="1700px"
+        style="border:0px;" allowfullscreen>
+        </iframe>
+
+        </div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+{%endblock%}

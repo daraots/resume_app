@@ -1,0 +1,191 @@
+
+{% extends 'main/base.html' %}
+{% load static %}
+
+<!-- ================================
+Start SEO blocks
+================================= -->
+{% block title %}{% endblock %}
+{% block decription %}{% endblock %}
+{% block keywords %}{% endblock %}
+<!-- ================================
+END SEO blocks
+================================= -->
+
+<!-- ================================
+Start CSS blocks
+================================= -->
+{% block extend_header %}{% endblock %}
+<!-- ================================
+END CSS blocks
+================================= -->
+
+<!-- ================================
+Start script blocks
+================================= -->
+{% block extend_footer %}{% endblock %}
+<!-- ================================
+END script blocks
+================================= -->
+
+<!-- ================================
+Start Content
+================================= -->
+{% block content %}
+
+
+
+
+<style>
+  .w3-hover-opacity:hover{opacity:0.60}.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1}
+
+  .lightDz {
+  background-color: #fffefe;
+}
+  </style>
+
+
+
+<!-- Start recent-blog Area -->
+<section class="recent-blog-area section-gap">
+  <div class="sectionSpace lightBg">
+    <div class="container">
+      <div class="row justify-content-left">
+        <div class="bannerContent">
+          <div class="row align-items-center justify-content-between personal-details">
+            <h4 class="text-uppercase">Data Visualization</h4>
+            <br>
+            <br>
+            <br>
+
+            <!-- Code for about me button ...  <a href="about" class="primary-btn text-uppercase">About me</a> -->
+
+        </div>
+        </div>
+      </div>
+      <div class="row">
+
+
+
+
+
+
+
+
+
+        <div class="single-recent-blog col-lg-4 col-md-4">
+          <div class="thumb">
+            <a href="/portfolio/student-enrollment-dashboards" target="_blank">
+
+              <div class="w3-hover-opacity">
+                <img src="{% static 'images/EnrollmentTrends.JPG' %}" alt="This zooms-in really well and smooth" >
+              </div>
+          </a>
+
+          </div>
+          <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+
+            <div class="meta">
+              <br>
+              Jan 20, 2020
+            </div>
+
+          </div>
+          <a href="/portfolio/student-enrollment-dashboards" target="_blank">
+
+            <h5>Student Enrollment Trends Dashboard </h5>
+          </a>
+          <p>
+            Example of a Power BI dashboard which I built to show enrollment trends for a university over time.
+          </p>
+        </div>
+
+
+
+
+
+        <div class="single-recent-blog col-lg-4 col-md-4">
+          <div class="thumb">
+            <a href="/portfolio/world-trade-statistics" target="_blank">
+
+              <div class="w3-hover-opacity">
+                <img src="{% static 'images/WTO_v0Ug5wY.JPG' %}" alt="This zooms-in really well and smooth" >
+              </div>
+          </a>
+
+          </div>
+          <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+
+            <div class="meta">
+              <br>
+              Jan 20, 2020
+            </div>
+
+          </div>
+          <a href="/portfolio/world-trade-statistics" target="_blank">
+
+            <h5>World Trade Statistics</h5>
+          </a>
+          <p>
+            Dashboard presents export/import data as published by the World Trade Organization.
+          </p>
+        </div>
+
+
+
+
+
+
+        <div class="single-recent-blog col-lg-4 col-md-4">
+          <div class="thumb">
+            <a href="/portfolio/feedback-survey-dashboard" target="_blank">
+
+              <div class="w3-hover-opacity">
+                <img src="{% static 'images/Online_Feedback_Survey.JPG' %}" alt="This zooms-in really well and smooth" >
+              </div>
+          </a>
+
+          </div>
+          <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+
+            <div class="meta">
+              <br>
+              Jan 20, 2020
+            </div>
+
+          </div>
+          <a href="/portfolio/feedback-survey-dashboard" target="_blank">
+
+            <h5>Online Feedback Survey</h5>
+          </a>
+          <p>
+            MS Forms was connected to Power BI to make this dashboard which presents the results of a student feedback survey for Summer 2021.
+          </p>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</section>
+  <!-- end recent-blog Area -->
+
+
+
+{% endblock%}

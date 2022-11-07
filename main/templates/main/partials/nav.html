@@ -1,0 +1,132 @@
+{% load static %}
+<!-- ================================
+Start Navigation Bar
+================================= -->
+
+<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22.67px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(184, 131, 17);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17.34px;
+  width: 17.34px;
+  left: 2.668px;
+  bottom: 2.668px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #212a44;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(17.34px);
+  -ms-transform: translateX(17.34px);
+  transform: translateX(17.34px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 22.67px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+
+
+
+
+
+
+
+<header>
+    <div class="headerCol">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+        <div class="col-auto">
+            <div class="navCol"><a href="{%url 'main:home'%}">D. Ferhadi</a></div>
+        </div>
+
+
+        <div class="col-auto">
+
+            <label class="switch">
+              <input id=toggleswitch type="checkbox">
+              <span class="slider round"><href="https://dferha2.pythonanywhere.com/white-out/"></href></span>
+            </label>
+
+
+
+        </div>
+
+        <div class="col">
+            <div class="d-md-none">
+            <button class="navToggle">
+                <span class="navToggle__text">Toggle Menu</span>
+            </button>
+            </div>
+            <div class="navCollapseCol">
+            <div class="navCol">
+                <ul>
+                <li><a href="{%url 'main:home'%}">Home</a></li>
+                <li><a href="{%url 'main:about' %}">My Story</a></li>
+
+
+                <li><a href="{%url 'main:Portfolio'%}">Portfolio</a></li>
+
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</header>
+<script>
+    var input = document.getElementById('toggleswitch');
+    var outputtext = document.getElementById('status');
+
+    input.addEventListener('change',function(){
+        if(this.checked) {
+            window.location.replace('https://dferha2.pythonanywhere.com/white-out/');
+        } else {
+
+        }
+    });
+</script>
+<!-- ================================
+End Navigation Bar
+================================= -->
+

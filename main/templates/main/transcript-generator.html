@@ -1,0 +1,177 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+<!-- ================================
+Start SEO blocks
+================================= -->
+{% block title %}{% endblock %}
+{% block decription %}{% endblock %}
+{% block keywords %}{% endblock %}
+<!-- ================================
+END SEO blocks
+================================= -->
+
+<!-- ================================
+Start CSS blocks
+================================= -->
+{% block extend_header %}{% endblock %}
+<!-- ================================
+END CSS blocks
+================================= -->
+
+<!-- ================================
+Start script blocks
+================================= -->
+{% block extend_footer %}{% endblock %}
+<!-- ================================
+END script blocks
+================================= -->
+
+<!-- ================================
+Start Content
+================================= -->
+{% block content %}
+<section>
+
+
+        <div class="sectionSpaceSm">
+          <div class="container">
+            <br>
+            <br>
+
+            <h4 class="text-uppercase">Automated Transcript Reports</h4>
+            <br>
+
+
+
+
+
+
+
+
+<div class="container">
+
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    #fade {
+      display: none;
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      z-index: 1001;
+      -moz-opacity: 0.8;
+      opacity: .80;
+      filter: alpha(opacity=80);
+    }
+
+    #light {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-width: 600px;
+      max-height: 360px;
+      margin-left: -300px;
+      margin-top: -180px;
+      border: 2px solid #FFF;
+      background: #FFF;
+      z-index: 1002;
+      overflow: visible;
+    }
+
+    #boxclose {
+      float: right;
+      cursor: pointer;
+      color: #fff;
+      border: 1px solid #AEAEAE;
+      border-radius: 3px;
+      background: #222222;
+      font-size: 31px;
+      font-weight: bold;
+      display: inline-block;
+      line-height: 0px;
+      padding: 11px 3px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      z-index: 1002;
+      opacity: 0.9;
+    }
+
+    .boxclose:before {
+      content: "×";
+    }
+
+    #fade:hover ~ #boxclose {
+      display:none;
+    }
+
+    .test:hover ~ .test2 {
+      display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    </head>
+    <body>
+
+    <div id="light">
+      <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+      <video id="VisaChipCardVideo" width="600" controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          <!--Browser does not support <video> tag -->
+        </video>
+    </div>
+
+    <div id="fade" onClick="lightbox_close();"></div>
+
+    <div>
+      <a>The following application was one of my first real programming projects at AUK, it is a Visual Basic Application which scrapes data from individual spreadsheets on the MS SharePoint (instructors input grades for students), it then makes Academic Transcript Reports for each student and emails it to them individually. This transcript generator saved 2-weeks of full-time work for two administrative assistants each semester, equivalent to 160 man-hours every 4 months. Please watch in HD so that the content of the video is clear.
+    </div>
+    <br>
+    <br>
+
+
+    <iframe width="820" height="485" src="https://www.youtube.com/embed/i4CI-eQeQY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <br>
+    <br>
+
+
+
+
+
+{%endblock%}

@@ -1,0 +1,338 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+<!-- ================================
+Start SEO blocks
+================================= -->
+{% block title %}{% endblock %}
+{% block decription %}{% endblock %}
+{% block keywords %}{% endblock %}
+<!-- ================================
+END SEO blocks
+================================= -->
+
+<!-- ================================
+Start CSS blocks
+================================= -->
+{% block extend_header %}{% endblock %}
+<!-- ================================
+END CSS blocks
+================================= -->
+
+<!-- ================================
+Start script blocks
+================================= -->
+{% block extend_footer %}{% endblock %}
+<!-- ================================
+END script blocks
+================================= -->
+
+<!-- ================================
+Start Content
+================================= -->
+{% block content %}
+<!--banner -->
+
+ <style>
+
+ :root {
+  --primaryColor: #150183;
+  --primaryDarkColor: #3D0048;
+  --primaryHoverColor: #5e5d9e;
+  --secondaryColor: #F9B000;
+  --baseColor: #212a44;
+  --baseFont: 'Heebo', sans-serif;
+  --titleFont: 'Courier Prime', monospace;
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+  --black: 900;
+  --lightBg: #212a44;
+  --lightblau: #7585cc;
+  --lightGold: #ccbf75;
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+ </style>
+
+
+<section>
+  <div class="bannerSection">
+    <div class="container">
+      <div class="row g-4 g-md-3  align-items-center">
+        <div class="col-md-auto order-md-last">
+          <div class="bannerUserImg">
+            <img src="{% static 'images/Kstan  Daner.jpg' %}" alt="{{me.first_name|title}} {{me.last_name|title}} avatar">
+          </div>
+        </div>
+        <div class="col-md">
+
+
+          <div class="bannerContent">
+          <div class="bannerContent">
+            <h4 class="text-uppercase">About Me</h4>
+            <br>
+            <p class="fz-16">
+
+              In 1996, my family emigrated to the United States. In the airplane, I turned 6 years old. My birthday gift was landing in a whole new world. Overcoming adversity with resolve and hard work, we propsered towards the American Dream, becoming citizens in 2006.
+           </p>
+           <p class="fz-16">
+            In 2012 my parents moved back to the Kurdistan Region of Iraq. In 2014, after completing my degree in mathematics, and amidst the invasion of ISIS, I decided to move back to be with my younger siblings and my parents. Approximately 40 kilometers away from the frontline, I was hired to be a Data Analyst for the American University of Kurdistan in Duhok, Iraq. There, I began developing a passion for building databases from scratch and I started automating tasks around the office, often working to streamline processes across several departments including the Registrar, Office of Finance, Academic Departments and Colleges, and the Human Resources Department.
+          </p>
+           <p class="fz-16">
+             In 2021 I moved to the Netherlands to be with my Wife, here I started a business intelligence and data analytics consulting company, Ferhadi Analytics. In doing so, I have invoked the Dutch-American Friendship Treaty and am now a resident of the Netherlands.I look forward to what the future will bring.
+           </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Start timeline Area -->
+<section class="timeline lightBg pb-80">
+  <br>
+  <div class="container">
+    <div class="row align-items-center justify-content-between personal-details">
+        <div class="menu-content pb-40">
+            <div class="row align-items-center justify-content-between personal-details">
+                <h4 class="text-uppercase"></h4>
+            </div>
+        </div>
+    </div>
+  <ul>
+
+
+    <li>
+      <div class="content">
+        <h4>
+          <time>Kindergarten - 12th Grade</time>
+        </h4>
+        <p><b>United States of America 1996 - 2008</b></p>
+        <p>Mountain View Elementary</p>
+        <p>West Frederick Middle School</p>
+        <p>Tuscarora High School</p>
+      </div>
+    </li>
+
+
+    <li>
+    <div class="content">
+      <h4>
+        <time>Bachelor of Science in Mathematics</time>
+      </h4>
+      <p><b>Pennsylvania State University 2013</b></p>
+      <p><b>University Park, PA, USA</b></p>
+      <p><b>Area of Application:</b> Nuclear Engineering</p>
+    </div>
+  </li>
+
+
+
+
+
+
+
+
+  <li>
+    <div class="content">
+      <img class="img-fluid mx-auto d-block mb-30" src="/media/Penn-State-University-400x400.jpg" alt="">
+      <h4>
+        <time>Financial Data Analyst</time>
+      </h4>
+      <p><b>Robert Half Finance and Accounting</b></p>
+      <p>December 2014 - May 2015</p>
+    </div>
+  </li>
+
+
+  <li>
+    <div class="content">
+      <h4>
+        <time>Master of Science in Mathematics</time>
+      </h4>
+      <p><b>University of Nottingham 2017</b></p>
+      <p><b>University Park, Nottingham, UK</b></p>
+      <p><b>Thesis:</b> Computational Methods for Evaluating the Riemann-Zeta Function using Python</p>
+    </div>
+  </li>
+
+  <li>
+    <div class="content">
+      <h4>
+        <time>Data Analyst</time>
+      </h4>
+      <p><b>American University of Kurdistan</b></p>
+      <p>May 2015 - Present</p>
+    </div>
+    </li>
+
+  <br>
+  </ul>
+</div>
+</section>
+<br>
+
+
+<!-- End timeline Area -->
+
+</div>
+
+
+
+
+
+
+<!-- start faqs here -->
+
+<div class="container">
+
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .accordion {
+      background-color: rgb(184, 131, 17);
+      color: #212a44;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+
+    .active, .accordion:hover {
+      background-color: #212a44;
+      color:  rgb(252, 252, 252);
+    }
+
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    </head>
+    <body>
+
+    <h4 class="text-uppercase">Frequently Asked Questions</h4>
+    <br>
+    <br>
+
+    <button class="accordion"><b>Why did you create this website?</b></button>
+    <div class="panel">
+      <br>
+      <p>I created this website from scratch using Django (Python), HTML, and Javascript. I then deployed it on a private server using Heroku. I did this so that I can learn more about front-end and back-end development. I believe knowledge and expertise in developing and deploying apps will be essential in data science in the years to come.</p>
+      <br>
+    </div>
+
+    <button class="accordion"><b>Do you have experience with databases?</b></button>
+    <div class="panel">
+      <br>
+      <p>I have hosted and deployed my own SQL database with this website. I have an intermediate knowledge of SQL queries, and have experience building Access databases from scratch and connecting them to automate reports using VBA.</p>
+      <br>
+    </div>
+
+    <button class="accordion"><b>Do you have experience with Python?</b></button>
+    <div class="panel">
+      <br>
+      <p>For my masters thesis, I showed why the most powerful computational method for evaluating the Riemann Zeta Function is only a good approximation given a specific domain, to do this I used Python and matplotlib. Furthermore, I have completed several Kaggle projects utilizing ML algorithms and python. I also used python to build this website. Another example is an optimization problem for student enrollment where I wrote a random-greedy algorithm from scratch using python. These projects can be found in my portfolio.</p>
+      <br>
+    </div>
+
+    <button class="accordion"><b>What kinds of opportunities are you interested in?</b></button>
+    <div class="panel">
+      <br>
+      <p>I welcome opportunies where I can develop expertise in the areas of Data Science and Data Engineering. I would like to develop and deploy machine learning models, build data pipelines, and use my expertise in mathematics and passion for computer science to build value within an organization.</p>
+      <br>
+    </div>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}

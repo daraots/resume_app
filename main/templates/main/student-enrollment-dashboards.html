@@ -1,0 +1,67 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+<!-- ================================
+Start SEO blocks
+================================= -->
+{% block title %}{% endblock %}
+{% block decription %}{% endblock %}
+{% block keywords %}{% endblock %}
+<!-- ================================
+END SEO blocks
+================================= -->
+
+<!-- ================================
+Start CSS blocks
+================================= -->
+{% block extend_header %}{% endblock %}
+<!-- ================================
+END CSS blocks
+================================= -->
+
+<!-- ================================
+Start script blocks
+================================= -->
+{% block extend_footer %}{% endblock %}
+<!-- ================================
+END script blocks
+================================= -->
+
+<!-- ================================
+Start Content
+================================= -->
+{% block content %}
+<section>
+
+
+        <div class="sectionSpaceSm">
+          <div class="container">
+            <br>
+            <br>
+
+            <h4 class="text-uppercase">Student Enrollment and Class Sizes Dashboard</h4>
+
+
+            <p class="fz-16">
+            <br>
+              The American University of Kurdistan (AUK) offers Bachelor's degree classes in Spring and Fall. I built the dashboard below to show institutional enrollment trends. This dashboard is published on <a href="https://auk.edu.krd/about/institutional-dashboard/" target=_blank style="color:	#0645AD;">AUK's official website.</a>
+            </p>
+
+              <iframe width="850" height="485" src="https://app.powerbi.com/view?r=eyJrIjoiZWZmZjQwNjYtZTNjZi00YTU2LTkxMTUtNThhNWI0MDBkMTI1IiwidCI6IjI1YzdiYmJlLWUzYjMtNDdiNS04NDI1LTY2YjYzMzMyMTdmNSIsImMiOjl9&pageName=ReportSectionda6ccca10910b2480904" allowFullScreen="true" style="border:1px solid black;"></iframe>
+
+          </div>
+
+
+
+
+          </div>
+
+
+</section>
+
+
+
+
+
+
+{%endblock%}

@@ -1,0 +1,75 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+<!-- ================================
+Start SEO blocks
+================================= -->
+{% block title %}{% endblock %}
+{% block decription %}{% endblock %}
+{% block keywords %}{% endblock %}
+<!-- ================================
+END SEO blocks
+================================= -->
+
+<!-- ================================
+Start CSS blocks
+================================= -->
+{% block extend_header %}{% endblock %}
+<!-- ================================
+END CSS blocks
+================================= -->
+
+<!-- ================================
+Start script blocks
+================================= -->
+{% block extend_footer %}{% endblock %}
+<!-- ================================
+END script blocks
+================================= -->
+
+<!-- ================================
+Start Content
+================================= -->
+{% block content %}
+<section>
+
+
+        <div class="sectionSpaceSm">
+          <div class="container">
+            <br>
+            <br>
+
+            <h4 class="text-uppercase">World Trade Statistics</h4>
+
+
+            <p class="fz-16">
+            <br>
+              The World Trade Organization published data each year, the data can be downloaded here. Below is an interactive dashboard which I made to show export/import data for various countries.
+            </p>
+
+
+         </div>
+        </div>
+
+
+          <div class="container lightBg">
+            <br>
+
+
+            <iframe title="WorldTradeNeds2 - Commodity Export/Import Tables" width="850" height="485" src="https://app.powerbi.com/view?r=eyJrIjoiYjg5ZTMwMzktYmM5MS00YzM5LWI5YTYtOWUwYjY3YzZiZGMyIiwidCI6IjI1YzdiYmJlLWUzYjMtNDdiNS04NDI1LTY2YjYzMzMyMTdmNSIsImMiOjl9&pageName=ReportSection3d52aa30863301e6d72b" frameborder="0" allowFullScreen="true"></iframe>
+
+
+
+            <br>
+          </div>
+
+
+
+</section>
+
+
+
+
+
+
+{%endblock%}
